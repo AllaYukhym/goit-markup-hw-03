@@ -8,6 +8,7 @@
   --mail-tel-color: rgba(255, 255, 255, 0.6);
   --border-color: #eeeeee;
   --borger-header: #ececec;
+  --card-set-gap: 30px;
 }
 
 body {
@@ -364,18 +365,18 @@ p {
 .examples {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
+  margin-left: calc(-1 * var(--card-set-gap));
+  margin-top: calc(-1 * var(--card-set-gap));
 }
 
 .examples-link {
-  margin-left: 30px;
-  margin-top: 30px;
+  margin-left: var(--card-set-gap);
+  margin-top: var(--card-set-gap);
 }
 
 .examples .link {
   width: 370px;
-  flex-basis: calc((100%-3 * 30) / 3);
+  flex-basis: calc((100%-3 * var(--card-set-gap)) / 3);
 }
 
 .examples-title {
